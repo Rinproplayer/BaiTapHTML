@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dieukhoan{
+            width: 700px;
+            box-shadow: 0 5px 10px rgb(219,221,223)
+                0 15px 40px rgb(219,221,223);
+            background-color: white;
+            border-radius: 7px;
+            border: 1px solid rgb(219,221,223);
+            margin-top: 20px;
+            margin-left: 90px;
+            padding: 20px;
+            overflow: scroll;
+            height: 100px;
+        }
+        table{
+            margin-left: 90px;
+            box-shadow: 0 5px 10px rgb(219,221,223)
+                0 15px 40px rgb(219,221,223);
+            background-color: white;
+            border-radius: 7px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        tr td{
+            padding: 5px;
+        }
+        .hovaten{
+            margin-left: -115px;
+        }
+        h2{
+            text-align: center;
+            color: burlywood;
+        }
+        .test
+        {
+            text-align: right;
+        }
+        .dky{
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 500px;
+        }
+        .dky button{
+            background-color: rgb(135, 187, 222);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="hoten">Tên Đăng Nhập</label>
+            </td>
+            <td>
+                <input type="text" id="hoten" name="hoten">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="pass">Mật Khẩu</label>
+            </td>
+            <td>
+                <input type="password" id="pass" name="pass">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="confirm">Xác Nhận Mật Khẩu</label>
+
+            </td>
+            <td>
+                <input type="password" id="confirm" name="confirm">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Địa Chỉ Email</label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <p>Email này dùng để nhận email kích hoạt tài khoản,lấy lại mật khẩu, thông báo từ ban quản trị...</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="danh">Xưng Danh</label>
+            </td>
+            <td>
+                <select name="danh" id="danh">
+                    <option value="1">Bạn</option>
+                    <option value="2">Ông </option>
+                    <option value="3">Bà</option>
+                </select>
+        </tr>
+        <tr>
+            <td>
+                <label for="hoten">Họ Và Tên</label>
+
+            </td>
+            <td>
+                <div class = "hovaten">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" id="ho" name="ho" placeholder="Họ">
+                            </td>
+                            <td>
+                                <input type="text" id="tendem" name="tendem" placeholder="Tên Đệm">
+                            </td>
+                            <td>
+                                <input type="text" id="ten" name="ten" placeholder="Tên">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+
+         
+
+        </tr>
+        <tr>
+            <td> <label for="namsinh">Năm Sinh</label></td>
+
+            <td>
+                    <input type="date" name="namsinh" id="namsinh">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gioitinh">Giới Tính</label>
+            </td>
+            <td>
+                <input type="radio" name="gioitinh" id="nam" value="1">Nam
+                <input type="radio" name="gioitinh" id="nu" value="0">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="diachi">Địa Chỉ liên hệ</label>
+            </td>
+            <td>
+                <input type="text" id="diachi" name="diachi">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tinhthanh">Tỉnh Thành</label>
+
+            </td>
+            <td>
+                <select name="tinhthanh" id="tinhthanh">
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Hồ Chí Minh</option>
+                    <option value="3">Đà Nẵng</option>
+                    <option value="4">Hải Phòng</option>
+                    <option value="5">Cần Thơ</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="dienthoai">Điện thoại</label>
+            </td>
+            <td>
+                <input type="text" id="dienthoai" name="dienthoai">
+        </tr>
+
+            <tr>
+                <td>
+                    <label for="dienthoai">Di Động</label>
+                </td>
+                <td>
+                    <input type="text" id="dienthoai" name="dienthoai">
+            </tr>
+           
+
+
+
+    </table>
+    <div class="dieukhoan">
+        <h2> ĐIỀU KHOẢN SỬ DỤNG</h2>
+        <p>Chào mừng bạn đến với website chơi game trực tuyến GameVui</p>
+        <br>
+        <p class="test"> Sửa đổi lần cuối: <i>Tháng 5 Năm 2024</i></p>   
+        <br>
+        <p>Cùng với . Bằng việc truy cập hay sử dụng dịch vụ của chúng tôi, bạn xác nhận rằng bạn đồng ý bị ràng buộc bởi Điều khoản Dịch vụ này. Bạn cũng xác nhận rằng bạn ít nhất 14 tuổi hoặc nếu bạn dưới 14 tuổi, bạn có sự cho phép của cha mẹ hoặc người giám hộ hợp pháp, những người này sẽ chịu trách nhiệm về việc tuân thủ Điều khoản Dịch vụ này của bạn.
+
+            2. Các điều khoản này có thể được chúng tôi cập nhật. Bạn có thể xem bản mới nhất của Điều khoản Dịch vụ bất kỳ lúc nào tại đây. Việc bạn tiếp tục sử dụng Dịch vụ sau khi chúng tôi có bất kỳ thay đổi trong Điều khoản Dịch vụ thể hiện sự chấp nhận Điều khoản Dịch vụ mới của bạn.
+            
+            3. Bạn có thể chấm dứt việc sử dụng Dịch vụ của chúng tôi nếu bạn không đồng ý tuân thủ các Điều khoản Dịch vụ này hoặc bất kỳ Điều khoản Dịch vụ nào trong tương lai do chúng tôi quy định.</p>    
+    </div>
+    <div class="dky">
+        <button>Tôi ĐỒng Ý Đăng Ký Thành Viên</button>
+    </div>
+    
+</body>
+</html>

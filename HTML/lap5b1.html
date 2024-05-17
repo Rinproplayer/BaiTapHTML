@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản Facebook</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+       .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .heading {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+       .field {
+            margin-bottom: 20px;
+        }
+       .field label {
+            display: block;
+            margin-bottom: 10px;
+        }
+       .field input[type="text"],.field input[type="email"],.field input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+       .field input[type="radio"] {
+            margin-right: 10px;
+        }
+       .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Đăng ký tài khoản Facebook</h2>
+        <form>
+            <div class="field">
+                <label for="ho">Họ</label>
+                <input type="text" id="ho" placeholder="Nhập họ" required>
+            </div>
+            <div class="field">
+                <label for="sodidong">Số di động hoặc email</label>
+                <input type="text" id="sodidong" placeholder="Nhập số di động hoặc email" required>
+            </div>
+            <div class="field">
+                <label for="matkhau">Mật khẩu mới</label>
+                <input type="password" id="matkhau" placeholder="Nhập mật khẩu mới" required>
+            </div>
+            <div class="field">
+                <label for="ngaysinh">Ngày sinh</label>
+                <input type="date" id="ngaysinh" value="1993-04-15" required>
+                <span>Tại sao tôi cần cung cấp ngày sinh của mình?</span>
+            </div>
+            <div class="field">
+                <label>Giới tính</label>
+                <input type="radio" id="nu" name="gioitinh" value="Nữ">
+                <label for="nu">Nữ</label>
+                <input type="radio" id="nam" name="gioitinh" value="Nam">
+                <label for="nam">Nam</label>
+            </div>
+            <div class="field">
+                <button class="button" type="submit">Tạo tài khoản</button>
+                <p>Luôn miễn phí.</p>
+                <p>Bằng cách nhấp vào Tạo tài khoản, bạn đồng ý với Điều khoản của chúng tôi và rằng bạn đã đọc Chính sách dữ liệu của chúng tôi, bao gồm Sử dụng cookie. Bạn có thể nhận được thông báo qua SMS từ Facebook và có thể bỏ chọn bất kỳ lúc nào.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
